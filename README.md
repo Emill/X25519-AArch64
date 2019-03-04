@@ -28,7 +28,7 @@ gcc linux_example.c X25519-AArch64.s -o linux_example
 ```
 
 ### Performance
-The library uses only 5840 bytes of code space in compiled form, uses 416 bytes of stack and runs one scalar multiplication in ~145k cycles on Cortex-A53, which is speed record as far as I know.
+The library uses only 5840 bytes of code space in compiled form, uses 416 bytes of stack and runs one scalar multiplication in ~145k cycles on Cortex-A53, which is speed record as far as I know. On Amazon AWS's A1 CPU (Cortex-A72), the implementation uses ~150k cycles (at 2.3 GHz).
 
 ### Code
 The code is written in GCC's assembler syntax.
